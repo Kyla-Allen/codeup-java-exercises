@@ -86,33 +86,33 @@ public class ControlFlowExercises {
 
 
         //Convert number grade to letter grade
-        char again = 'y';
-        System.out.println("Please enter a grade from 0 to 100");
-        int grade = Integer.parseInt(read.next());
-        do{
+//        char again = 'y';
+//        System.out.println("Please enter a grade from 0 to 100");
+//        int grade = Integer.parseInt(read.next());
+//        do{
+////
+//            //processing grade....
+//            char letterGrade;
+//           if(grade <= 100 & grade >= 88){
+//               letterGrade= 'A';
+//           } else if (grade <= 87 & grade >= 80){
+//               letterGrade = 'B';
+//           } else if (grade <= 79 & grade >= 67){
+//               letterGrade = 'C';
+//           } else if (grade <= 66 & grade >= 60){
+//               letterGrade = 'D';
+//           } else {
+//               letterGrade = 'F';
+//           }
 //
-            //processing grade....
-            char letterGrade;
-           if(grade <= 100 & grade >= 88){
-               letterGrade= 'A';
-           } else if (grade <= 87 & grade >= 80){
-               letterGrade = 'B';
-           } else if (grade <= 79 & grade >= 67){
-               letterGrade = 'C';
-           } else if (grade <= 66 & grade >= 60){
-               letterGrade = 'D';
-           } else {
-               letterGrade = 'F';
-           }
-
-            //displaying output
-            System.out.println("Your grade is " + letterGrade);
-
-            //asking user if they want to continue
-            System.out.println("Go again? (y/n)");
-            again = read.next().charAt(0);
-
-        }while (again == 'y');
+//            //displaying output
+//            System.out.println("Your grade is " + letterGrade);
+//
+//            //asking user if they want to continue
+//            System.out.println("Go again? (y/n)");
+//            again = read.next().charAt(0);
+//
+//        }while (again == 'y');
 
 
     }
