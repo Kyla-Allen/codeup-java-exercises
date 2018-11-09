@@ -14,7 +14,10 @@ public class MethodsExercises {
     }
 
     public static float findProduct (float input1, float input2){
-        float product = input1 * input2;
+        int product = 0;
+        for (int i=1; i <= input2; i++){
+            product += input1;
+        }
         return product;
     }
 
@@ -123,22 +126,23 @@ public class MethodsExercises {
 //        } while (keepGoing == 1);
 
         //Exercise 5
-        boolean gamesOn = true;
-        int tries = 5;
-        //main game loop
-        do {
-            int numberToGuess = (int) (Math.random() * 100) + 1; //generate random number
-            System.out.print(numberToGuess); //TODO: DELETE THIS LATER
-            System.out.println("Guess the number! You get " + tries + " tries!");
-            //guess number function (was a loop but has been refactored)
-            letsPlay(tries, numberToGuess);
-            //check if player wants to keep playing
-            System.out.println("Play Again? (y/n)");
-            String usersChoice = scan.nextLine();
-            if (usersChoice.equals("n")){
-                gamesOn = false;
-            }
-        } while (gamesOn == true);
+//        boolean gamesOn = true;
+//        int tries = 5;
+//        //main game loop
+//        do {
+//            int numberToGuess = (int) (Math.random() * 100) + 1; //generate random number
+//            System.out.print(numberToGuess); //TODO: DELETE THIS LATER
+//            System.out.println("Guess the number! You get " + tries + " tries!");
+//            //guess number function (was a loop but has been refactored)
+//            letsPlay(tries, numberToGuess);
+//            //check if player wants to keep playing
+//            System.out.println("Play Again? (y/n)");
+//            String usersChoice = scan.nextLine();
+//            if (usersChoice.equals("n")){
+//                gamesOn = false;
+//            }
+//        } while (gamesOn == true);
+
     }
 } //end of main
 
