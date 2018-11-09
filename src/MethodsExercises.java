@@ -65,33 +65,7 @@ public class MethodsExercises {
         return  "The numbers you got are " + die1 + " and " + die2;
     }
 
-//    Game Development 101
-    public static String results (int guess, int numberToGuess){
-        String output;
-        if (guess < numberToGuess){
-            output = "HIGHER";
-        } else if (guess > numberToGuess){
-            output = "LOWER";
-        } else {
-            output = "GOOD GUESS!";
-        }
-        return  output;
-    }
 
-    public static void letsPlay (int tries, int numberToGuess){
-        for (int i= 1; i<=tries; i++) {
-            int numberGuessed = getInteger(1, 100); //validating.... (I cheated and used a function i made earlier :3 )
-            String message = results(numberGuessed, numberToGuess);
-            if(message.equals("GOOD GUESS!")){
-                break;
-            }
-            if (i == tries){
-                System.out.println("YOU LOSE!");
-                break;
-            }
-            System.out.println(message);
-        } //end of guessing loop
-    }
 
 
 
@@ -125,23 +99,6 @@ public class MethodsExercises {
 //            keepGoing = scan.nextInt();
 //        } while (keepGoing == 1);
 
-        //Exercise 5
-//        boolean gamesOn = true;
-//        int tries = 5;
-//        //main game loop
-//        do {
-//            int numberToGuess = (int) (Math.random() * 100) + 1; //generate random number
-//            System.out.print(numberToGuess); //TODO: DELETE THIS LATER
-//            System.out.println("Guess the number! You get " + tries + " tries!");
-//            //guess number function (was a loop but has been refactored)
-//            letsPlay(tries, numberToGuess);
-//            //check if player wants to keep playing
-//            System.out.println("Play Again? (y/n)");
-//            String usersChoice = scan.nextLine();
-//            if (usersChoice.equals("n")){
-//                gamesOn = false;
-//            }
-//        } while (gamesOn == true);
 
     }
 } //end of main
