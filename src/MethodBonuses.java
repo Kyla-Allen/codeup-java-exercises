@@ -98,9 +98,7 @@ public class MethodBonuses {
 //    Create a method, getType() that will take in an input and return a string describing the type of the value.
 // Account for int, boolean, String, char, and double. Use method overloading.
 
-    public static String getType(int input){
-        return "Type: Integer";
-    }
+    public static String getType(int input){ return "Type: Integer"; }
     public static String getType(boolean input){
         return "Type: Boolean";
     }
@@ -118,6 +116,7 @@ public class MethodBonuses {
 //------ 4 ------
 //    Create a method to print out every letter in a string using recursion.
 
+
     public static int printWord (String word, int start){
         if(start < word.length()){
             System.out.print(word.charAt(start));
@@ -126,7 +125,6 @@ public class MethodBonuses {
         }
         return start;
     }
-
 //------ 5 ------
 //    Create a method to determine if a string is a palindrome.
 
