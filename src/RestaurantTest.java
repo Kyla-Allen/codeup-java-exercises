@@ -9,6 +9,6 @@ public class RestaurantTest {
         System.out.println(dish.costInCents);
         System.out.println(dish.nameOfDish);
         System.out.println(dish.wouldRecommend);
-        dish.eat();
+        RestaurantDish.eat();
     }
 }
