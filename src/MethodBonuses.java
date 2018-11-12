@@ -151,6 +151,11 @@ public class MethodBonuses {
 //    Create a method that will convert a written out whole number from
 // "zero" to "ninety-nine" and return the actual number.
 
+//    public static int findNumeric (String writtenNum){
+//        int num;
+//
+//        return num;
+//    }
 
 
 
