@@ -125,14 +125,35 @@ public class MethodBonuses {
         }
         return start;
     }
+
+
+
 //------ 5 ------
 //    Create a method to determine if a string is a palindrome.
 
+    public static String isPalindrome (String word){
+        String backWords = ""; //A fabulous pun, truly
+        word = word.toLowerCase(); // so i don't have to care about case
+        for(int i = 0; i < word.length(); i++){
+            int currentPosition = (word.length() - 1) - i;
+            backWords += word.charAt(currentPosition);
+        }
+        if (word.equals(backWords)){
+            return word + " is a palindrome";
+        } else {
+            return word + " is not a palindrome";
+        }
+    }
 
 
 
 //------ 6 ------
-//    Create a method that will convert a written out whole number from "zero" to "ninety-nine" and return the actual number.
+//    Create a method that will convert a written out whole number from
+// "zero" to "ninety-nine" and return the actual number.
+
+
+
+
 //------ 7 ------
 //    Create a command line calculator
 //- the user may enter a number
@@ -185,6 +206,11 @@ public class MethodBonuses {
 //        printWord("Superb", 0);
 
         //Bonus 5
+//        String message = isPalindrome("tacmooocat");
+//        System.out.println(message);
+
+        //Bonus 6
+
 
 
     }
