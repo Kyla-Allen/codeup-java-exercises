@@ -148,7 +148,12 @@ public class MethodBonuses {
 
 
 //------ 6 ------
-//    Create a method that will convert a written out whole number from "zero" to "ninety-nine" and return the actual number.
+//    Create a method that will convert a written out whole number from
+// "zero" to "ninety-nine" and return the actual number.
+
+
+
+
 //------ 7 ------
 //    Create a command line calculator
 //- the user may enter a number
@@ -203,6 +208,8 @@ public class MethodBonuses {
         //Bonus 5
 //        String message = isPalindrome("tacmooocat");
 //        System.out.println(message);
+
+        //Bonus 6
 
 
 
