@@ -80,14 +80,14 @@ public class MethodsExercises {
 
         //Exercises 2 and 3
         Scanner scan = new Scanner(System.in);
-//        int keepGoing;
-//        System.out.print("Enter a number between 1 and 10: ");
-//        do {
-//            int userInput = getInteger(1, 10);
-//            System.out.println(findFactorial(userInput));
-//            System.out.println("Keep going? 1.Yes 2.No");
-//            keepGoing = scan.nextInt();
-//        } while (keepGoing == 1);
+        int keepGoing;
+        do {
+            System.out.print("Enter a number between 1 and 10: ");
+            int userInput = getInteger(1, 10);
+            System.out.println(findFactorial(userInput));
+            System.out.println("Keep going? 1.Yes 2.No");
+            keepGoing = scan.nextInt();
+        } while (keepGoing == 1);
 
         //Exercise 4
 //        int keepGoing;
