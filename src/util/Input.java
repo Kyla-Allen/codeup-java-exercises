@@ -16,10 +16,9 @@ public class Input {
 
     public boolean yesNo(String prompt){
         boolean output;
-        System.out.print(prompt);
-        String input = this.scanner.nextLine().toLowerCase();
-        input = input.substring(0,1);
-        if(input.equals("y")){
+        System.out.println(prompt);
+        String input = this.scanner.nextLine();
+        if(input.equals("y") || input.equals("yes")){
             output = true;
         } else {
             output = false;
