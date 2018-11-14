@@ -27,25 +27,23 @@ public class MoviesApplication {
 
         String choice = "Enter your choice: ";
 
-        System.out.println(startMsg + options);
+        do {
+            System.out.println(startMsg + options);
 
 
-        //getting user input
-        int userInput = input.getInt(0,7, choice);
+            //getting user input
+            int userInput = input.getInt(0,7, choice);
 
-        //converting input to category....
-        String category2search = categories[userInput-2]; //gotta add the -2 because the array doesn't line up perfectly
-        for (Movie movie : MoviesArray.findAll()){
-            if(movie.getCategory().equals(category2search)){
-                System.out.println(movie.getName() + " --- " + movie.getCategory());
+            //converting input to category....
+            String category2search = categories[userInput-2]; //gotta add the -2 because the array doesn't line up perfectly
+
+            //displaying the movies that fit the category
+            for (Movie movie : MoviesArray.findAll()){
+                if(movie.getCategory().equals(category2search)){
+                    System.out.println(movie.getName() + " --- " + movie.getCategory());
+                }
             }
-        }
-
-
-
-
-
-
+        } while (input.yesNo("Contintue?"));
 
 
     }
