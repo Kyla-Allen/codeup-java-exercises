@@ -61,7 +61,7 @@ public class MoviesApplication {
                 String cat = sc.nextLine();
                 //adding
                 Movie movieObj = new Movie(title, cat);
-                movies = addMovie(MoviesArray.findAll(), movieObj);
+                movies = addMovie(movies, movieObj);
 
             } else if(userInput == 1){
                 for(Movie movie: movies){
