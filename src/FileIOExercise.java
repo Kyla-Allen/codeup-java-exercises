@@ -7,6 +7,7 @@ public class FileIOExercise {
     //METHODS
 
 
+//    RETRIEVING INFO
     public static List<String> getFileData (String path){
         List<String> output = null;
         try {
